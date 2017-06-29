@@ -1,0 +1,50 @@
+<!-- Side Project Generator
+	conception and ideaList by Nick Rog and Russ Rizzo
+	code by Alex Nelson -->
+<!doctype html>
+<div class="container-fluid">
+<title>Hockey Project</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="main.css">
+<link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
+
+<container class="container-top">
+	<p style="float: left;"><a href="https://nickrog.com" target="_blank">play</a></p>
+	<p style="float: right; margin: 15px;">your score is</p>
+	<!-- <div style="clear: both"></div> -->
+</container>
+
+<br>
+
+<p style="float: right; margin: 15px; font-size: 28px;" id="score"></p>
+
+<br><br><br><br><br>
+
+<!-- <div class="content"> -->
+	<div class="floating-box" style="width: 33%; float: left;">
+		<br><br>
+	  	<input type="button" onclick="myFunctionLeft()" value="left">
+	</div>
+
+	<div class="floating-box" style="width: 34%; float: center;">
+		<body onload="buildImage();">
+		    <img class="contents" class="image-display" id="images"></img>
+		    <div id="names" style="text-transform: capitalize;"></div>
+		</body>
+	</div>
+
+	<div class="floating-box" style="width: 33%; float: right;">
+		<br><br>
+		<input type="button" onclick="myFunctionRight()" value="right">
+	</div>
+	<br>
+<!-- </div> -->
+<br>
+
+<container class="container-bottom" style="text-align: center;">
+	<p style="float: left;"><a href="https://nickrog.com" target="_blank">free beer</a></p>
+	<p style="float: right; margin: 15px">who</p>
+</container>
+<!-- </fieldset> -->
+<script src="main.js"></script>
+

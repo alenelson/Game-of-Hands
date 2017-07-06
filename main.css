@@ -1,5 +1,7 @@
-/*developed with Alex Nelson*/
-
+/*  NHL Handedness
+    by Russ Rizzo
+    coded by Alex Nelson
+*/
 body {
     background-image: url("images/paper_background.jpg");
     font-family: 'Overpass Mono', monospace;
@@ -97,7 +99,7 @@ img {
 }
 
 .image-display{
-    height
+    /*height*/
 }
 
 .container-bottom {

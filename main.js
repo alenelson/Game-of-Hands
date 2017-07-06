@@ -1,37 +1,17 @@
 var playerList = [
-	'drew-doughty-8474563',
+/*	'drew-doughty-8474563',
 	'derek-forbort-8475762',
 	'kevin-gravel-8475857',
 	'paul-ladue-8476983',
 	'alec-martinez-8474166',
 	'jake-muzzin-8474162',
+*/
 	'vitaly-abramov-8479411',
-
-
-	'josh-anderson-8476981',
-	'cam-atkinson-8474715',
-	'oliver-bjorkstrand-8477416',
-	'matt-calvert-8474685',
-	'zac-dalpe-8474610',
-	'brandon-dubinsky-8471273',
-	'nick-foligno-8473422',
-	'markus-hannikainen-8478541',
-	'boone-jenner-8476432',
-	'sonny-milano-8477947',
-	'tyler-motte-8477353',
-	'artemi-panarin-8478550',
-	'jordan-schroeder-8475147',
-	'lukas-sedlak-8476310',
-	'alexander-wennberg-8477505',
-	'gabriel-carlsson-8478506',
-	'cameron-gaunce-8474611',
-	'scott-harrington-8476449',
-	'jack-johnson-8471677',
-	'seth-jones-8477495',
-	'ryan-murray-8476850',
-	'david-savard-8475233',
-	'zach-werenski-8478460',
-	'brian-boyle-8470619',
+	'josh-anderson-8476981', 'cam-atkinson-8474715', 'oliver-bjorkstrand-8477416', 'matt-calvert-8474685', 'zac-dalpe-8474610',
+	'brandon-dubinsky-8471273', 'nick-foligno-8473422', 'markus-hannikainen-8478541', 'boone-jenner-8476432', 'sonny-milano-8477947',
+	'tyler-motte-8477353', 'artemi-panarin-8478550', 'jordan-schroeder-8475147', 'lukas-sedlak-8476310', 'alexander-wennberg-8477505',
+	'gabriel-carlsson-8478506', 'cameron-gaunce-8474611', 'scott-harrington-8476449', 'jack-johnson-8471677', 'seth-jones-8477495',
+	'ryan-murray-8476850', 'david-savard-8475233', 'zach-werenski-8478460', 'brian-boyle-8470619',
 	'taylor-hall-8475791',
 	'adam-henrique-8474641',
 	'marcus-johansson-8475149',
@@ -293,12 +273,16 @@ var playerList = [
 	'nikita-zaitsev-8479458'
 ];
 //left handed = 0, right handed = 1
-var answerList = [1,0,0,1,0,0];
-answerList = [1,0,0,1,0,0,
-	0,1,0,0,0,0,1,0,0,0,1,0,1,0,1,1,0,1,0,0,0,0,0,1,1,0,1,0,1,1,0,1,1,0,1,0,0,0,1,0,0,0,1,1,0,0,1,1,1,0,0,0,0,0,1,0,0,1,1,0,1,
-	0,1,0,0,1,1,1,1,1,0,0,0,0,1,0,1,0,0,0,0,1,0,1,0,1,0,1,0,1,1,0,1,1,0,1,1,0,1,0,0,1,1,1,0,1,0,1,0,0,0,0,0,1,1,0,1,0,1,0,1,0,
-	0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,1,0,0,1,1,1,1,1,1,0,0,1,1,0,0,0,0,0,1,1,1,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,1,
-	0,1,0,1,1,1,0,0,0,0,0,1,1,0,0,1,1,1,1,1,1,0,0,1,0,1,0,0,0,1,1,0,0,1,0,0,1,0,0,1
+
+var answerList = [
+	/*
+		1,0,0,1,0,0,
+	*/
+	0,1,1,1,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,1,0,1,0,1,0,1,1,0,1,0,0,0,1,1,1,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,0,
+	0,0,1,0,0,0,1,0,1,0,1,1,0,1,0,0,0,0,0,1,1,0,1,0,1,1,0,1,1,0,1,0,0,0,1,0,0,0,1,1,0,0,1,1,1,0,0,0,0,0,1,0,0,1,1,0,1,0,1,0,0,1,1,1,1,
+	1,0,0,0,0,1,0,1,0,0,0,0,1,0,1,0,1,0,1,0,1,1,0,1,1,0,1,1,0,1,0,0,1,1,1,0,1,0,1,0,0,0,0,0,1,1,0,1,0,1,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,
+	0,0,0,0,0,0,1,1,0,0,1,0,1,0,0,1,1,1,1,1,1,0,0,1,1,0,0,0,0,0,1,1,1,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,1,0,1,0,1,1,1,0,0,0,0,0,1,1,0,0,1,
+	1,1,1,1,1,0,0,1,0,1,0,0,0,1,1,0,0,1,0,0,1,0,0,1
 ];
 var index = 0;
 var displayImage = document.getElementById('images');
@@ -308,7 +292,7 @@ var finalScore = 0;
 var guess = -1;
 
 function buildImage() {
-	// alert(getName(index));
+	alert("players="+playerList.length+" answers="+answerList.length);
 	finalScore = userScore;
 	userScore = 0;
 	getRandomIndex();

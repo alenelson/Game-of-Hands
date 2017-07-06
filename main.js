@@ -292,7 +292,6 @@ var finalScore = 0;
 var guess = -1;
 
 function buildImage() {
-	//alert("players="+playerList.length+" answers="+answerList.length);
 	finalScore = userScore;
 	userScore = 0;
 	getRandomIndex();
@@ -333,14 +332,11 @@ function getImage(number){
 	var input = playerList[number];
 	var output = input.replace(/[^0-9]/g, '');
 	link = 'https://nhl.bamcontent.com/images/headshots/current/168x168/' + output + '@2x.jpg';
-	// link = 'https://www.nhl.com/player/' + 
 	return link;
 }
 
 function youLost() {
-	// alert('test');
 	localStorage.setItem("score", finalScore);
-	// alert(getName(index));
 }
 
 function nextPage() {
@@ -364,7 +360,6 @@ function myFunctionLeft(){
 		youLost();
 		location.assign("game_over.html");
 		document.getElementById("score").innerHTML = userScore;
-		// alert("lose page in progress... but you lost");
 		// userScore = 0;
 	}
 }
@@ -380,7 +375,6 @@ function myFunctionRight(){
 		youLost();
 		location.assign("game_over.html");
 		document.getElementById("score").innerHTML = userScore;
-		// alert("lose page in progress... but you lost");
 		// userScore = 0;
 	}
 }
@@ -388,6 +382,5 @@ function myFunctionRight(){
 function getRandomIndex(){
 	//var x = Math.floor(Math.random() * ideaList.length);
 	//x = Math.floor(Math.random() * ideaList.length);
-	// alert("success");
 	index = Math.floor(Math.random() * playerList.length);
 }

@@ -292,7 +292,7 @@ var finalScore = 0;
 var guess = -1;
 
 function buildImage() {
-	alert("players="+playerList.length+" answers="+answerList.length);
+	//alert("players="+playerList.length+" answers="+answerList.length);
 	finalScore = userScore;
 	userScore = 0;
 	getRandomIndex();

@@ -6,45 +6,50 @@
 <title>Hockey Project</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="main.css">
-<link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
 
 <container class="container-top">
-	<p style="float: left;"><a href="index.html">play</a></p>
-	<p style="float: right; margin: 15px;">your score is</p>
+	<p style="float: center; margin: 35px; font-size: 22px;">Score</p>
 	<!-- <div style="clear: both"></div> -->
+	<p style="float: center; margin: 15px; font-size: 46px;" id="score"></p>
+
 </container>
 
-<br>
+<br><br><br><br><br><br><br><br><br><br><br>
 
-<p style="float: right; margin: 15px; font-size: 28px;" id="score"></p>
-
-<br><br><br><br><br>
-
+<body>
 <!-- <div class="content"> -->
 	<div class="floating-box" style="width: 33%; float: left;">
 		<br><br>
-	  	<input type="button" onclick="myFunctionLeft()" value="left">
+	  	<input type="button" onclick="myFunctionLeft()" value="LEFT">
 	</div>
 
 	<div class="floating-box" style="width: 34%; float: center;">
 		<body onload="buildImage();">
 		    <img class="contents" class="image-display" id="images"></img>
-		    <div id="names" style="text-transform: capitalize;"></div>
+		    <div id="names" style="text-transform: uppercase; margin: 15px;"></div>
 		</body>
 	</div>
 
 	<div class="floating-box" style="width: 33%; float: right;">
 		<br><br>
-		<input type="button" onclick="myFunctionRight()" value="right">
+		<input type="button" onclick="myFunctionRight()" value="RIGHT">
 	</div>
 	<br>
 <!-- </div> -->
 <br>
+</body>
 
-<container class="container-bottom" style="text-align: center;">
-	<p style="float: left;"><a href="free_beer.html">free beer</a></p>
-	<p style="float: right; margin: 15px">who</p>
-</container>
+<div class="container-bottom">
+	<!-- <p style="float: left;"><a href="index.html">restart</a>
+	<p style="float: center;"><a href="free_beer.html">free beer</a>
+	<p style="float: right;" id="aboutPop">about</p></p></p> -->
+	<p><a href="index.html">restart</a>
+	<a href="free_beer.html">free beer</a>
+	about</p>
+</div>
 <!-- </fieldset> -->
+
 <script src="main.js"></script>
 

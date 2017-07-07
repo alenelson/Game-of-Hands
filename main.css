@@ -3,43 +3,14 @@
     coded by Alex Nelson
 */
 body {
-    background-image: url("images/paper_background.jpg");
-    font-family: 'Overpass Mono', monospace;
+    background-image: url("images/Background_image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-position: center center;*/
+    font-family: 'Press Start 2P', cursive;
 }
-
 .content {
     margin: auto;
-}
-
-* {
-    /*box-sizing: border-box;*/
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-}
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-fieldset {
-    boarder: none;
 }
 
 p {
@@ -51,12 +22,14 @@ p {
 }
 
 input {
-    font-family: 'Overpass Mono', monospace;
-    font-size: 26px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    text-align: center;
     border: 3px solid #000000;
-    background: #bfbfbf;
+    background: transparent;
     height: 75px;
     width: 150px;
+    margin-top: 65px;
 }
 h1 {
     text-align: center;
@@ -84,12 +57,12 @@ div {
     height: 40%;
     margin: auto;
     /*border: 3px solid #73AD21;*/
-    font-size: 28px;
+    font-size: 18px;
 }
 
 img {
     vertical-align: center;
-    font-family: 'Overpass Mono', monospace;
+    font-family: 'Press Start 2P', cursive;
     display: block;
     margin: auto;
     /*width: 100%;*/
@@ -102,17 +75,21 @@ img {
     /*height*/
 }
 
-.container-bottom {
-    /*text-align: center;*/
-    position: fixed;
-    bottom: 0;
-    left: 5px;
-    width: 100%;
-}
 .container-top {
-    /*text-align: center;*/
+    text-align: center;
     position: fixed;
     top: 0;
     left: 5px;
+    width: 100%;
+}
+
+.container-bottom {
+    font-size: 12px;
+    /*display: inline-block;*/
+    /*float: center;*/
+    /*text-align: center;*/
+    position: fixed;
+    bottom: 0;
+    vertical-align: center;
     width: 100%;
 }

@@ -1,44 +1,98 @@
-/*  NHL Handedness
-    by Russ Rizzo
-    coded by Alex Nelson
+/** Game of Hands
+ *  by Russ Rizzo
+ *  coded by Alex Nelson
+ *  Styling effects with help of boostrap
 */
+
+html,body{
+    height: 100%;
+    background: url("images/Background_image.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*background-image: url("images/Background_image.jpg");*/
+    font-family: 'Press Start 2P', cursive;
+    padding: 115px, 115px, 115px, 115px;
+    margin: auto;
+    /*max-width: 1280px;*/
+    /*max-height: 100px;*/
+}
+/*
+#holder{
+    min-height: 100%;
+    position:relative;
+}
+
+#body{
+    height of footer 
+    padding-bottom: 100px;
+}
+*/
+/*
+html { 
+  background: url("images/Background_image.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
     background-image: url("images/Background_image.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    /*background-position: center center;*/
     font-family: 'Press Start 2P', cursive;
-}
-.content {
+    padding: 115px, 115px, 115px, 115px;
     margin: auto;
+    max-width: 1280px;
+    max-height: 100px;
 }
 
-p {
+
+footer {
+    /*float: center;
+    text-align: center;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    vertical-align: center;
+    padding-bottom: 1rem;
+    display: block;
+}
+*/
+
+#footer {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 50%;
+    /*background-color: #abcdef;*/
+}
+#header {
+    position: fixed;
+    bottom: 36%;
+    left: 0;
+    right: 0;
+    height: 100px;
     /*display: block;*/
-    /*margin-top: 1em;*/
-    /*margin-bottom: 1em;*/
-    /*margin-left: 0;*/
-    /*margin-right: 0;*/
+    /*background-color: #abcdef;*/
+}
+#content {
+    position: fixed;
+    top: 100px;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    /*background-color: #F63;*/
+    overflow: auto;
 }
 
-input {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 20px;
-    text-align: center;
-    border: 3px solid #000000;
-    background: transparent;
-    height: 75px;
-    width: 150px;
-    margin-top: 65px;
-}
-h1 {
-    text-align: center;
-}
+head { font-family: 'Press Start 2P', cursive; }
 
-a {
-    /*color: hotpink;*/
-    color: black;
-}
+h1 { text-align: center; }
+
+a { color: black; }
 
 div {
     /*//background-color: #FFFFFF;*/
@@ -47,17 +101,20 @@ div {
     /*padding: 25px;*/
     /*//margin: 25px;*/
     /*text-transform: capitalize;*/
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
 }
 
-.floating-box {
-    /*display: inline-block;*/
-    float: left;
+input {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
     text-align: center;
-    width: 32%;
-    height: 40%;
-    margin: auto;
-    /*border: 3px solid #73AD21;*/
-    font-size: 18px;
+    vertical-align: center;
+    border: 4px solid #000000;
+    background: transparent;
+    height: 75px;
+    width: 150px;
+    margin-top: 45px;
 }
 
 img {
@@ -65,32 +122,77 @@ img {
     font-family: 'Press Start 2P', cursive;
     display: block;
     margin: auto;
+    /*padding: auto;*/
     /*width: 100%;*/
     /*height: auto;*/
-    width: 75%;
-    height: 75%;
+    width: 85%;
+    /*height: 75%;*/
 }
 
-.image-display{
-    /*height*/
-}
+.link span{ color:black; font-size:15px; }
+.link:hover span{ font-style:italic; }
+.blink span{ color:black; /*font-size:15px;*/ }
+.blink:hover span{ font-style:italic; }
 
-.container-top {
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 5px;
+
+/*  START Bootstrap   */
+/*  SECTIONS  ============================================================================= */
+.section {
+    clear: both;
+    margin: 0px;
+    padding: 0px;
     width: 100%;
-    float: center;
-}
-
-.container-bottom {
-    font-size: 12px;
-    /*display: inline-block;*/
-    /*float: center;*/
-    text-align: center;
-    position: fixed;
-    bottom: 0;
     vertical-align: center;
-    width: 100%;
+    /*float: center;*/
 }
+
+/*  GROUPING  ============================================================================= */
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/*  GRID COLUMN SETUP   ==================================================================== */
+.col {
+    display: block;
+    float: left;
+    margin: 0% .05% 0% .05%;
+}
+
+/*  GRID OF FIVE   ============================================================================= */
+.span_5_of_5 { width: 100.0%; }
+.span_4_of_5 { width: 79.68%; }
+.span_3_of_5 { width: 59.36%; }
+.span_2_of_5 { width: 39.04%; }
+.span_1_of_5 { width: 18.72%; }
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+@media only screen and (max-width: 480px) {
+    .span_5_of_5 { width: 100%; }
+    .span_4_of_5 { width: 100%; }
+    .span_3_of_5 { width: 100%; }
+    .span_2_of_5 { width: 100%; }
+    .span_1_of_5 { width: 100%; }
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+@media only screen and (max-width: 480px) {
+    .span_3_of_3 { width: 100%; }
+    .span_2_of_3 { width: 100%; }
+    .span_1_of_3 { width: 100%; }
+}
+
+.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+@media only screen and (max-width: 480px) {
+    .col { margin: 1% 0 1% 0%; }
+}
+/*  END Bootstrap   */

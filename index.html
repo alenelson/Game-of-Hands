@@ -1,55 +1,110 @@
-<!-- NHL Handedness
+<!-- Game of Hands
 	by Russ Rizzo
 	coded by Alex Nelson -->
+<script type="text/javascript">
+  if (screen.width <= 699) {
+    document.location = "mobile.html";
+  }
+</script>
+<script language=javascript>
+  if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+     location.replace("mobile.html");
+  }
+</script>
 <!doctype html>
-<div class="container-fluid">
-<title>Hockey Project</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="main.css">
-<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+<html lang="en">
 
+<head>
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<container class="container-top">
-	<p style="float: center; margin: 35px; font-size: 22px;">Score</p>
-	<!-- <div style="clear: both"></div> -->
-	<p style="float: center; margin: 15px; font-size: 46px;" id="score"></p>
+  <title>Hockey Project</title>
+  <link href="main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+<div id="body">
+<!-- <div id="header"> -->
+	<div class="section group" style="text-align:center; margin-left: 0%;">
+			    <!-- <div class="col span_1_of_5" style="width: 101%"> -->
 
-</container>
-
-<br><br><br><br><br><br><br><br><br><br><br>
-
-<body>
-<!-- <div class="content"> -->
-	<div class="floating-box" style="width: 33%; float: left;">
-		<br><br>
-	  	<input type="button" onclick="myFunctionLeft()" value="LEFT">
+		<p style="margin: 35px; font-size: 22px;">Score</p>
+		<!-- <div style="clear: both"></div> -->
+		<p style="margin: 15px; font-size: 46px;" id="score"></p>
+				<!-- </div> -->
 	</div>
+	 <!--  <div class="section group" style="text-align: center;"></div> -->
+<!-- </div>	  -->
+<!-- <div id="body"> -->
+	  <!-- part 1 -->
+	  <div class="section group" style="margin-left: -2%;">
+	    <div class="col span_1_of_5" style="width: 5%;"><br></div>
 
-	<div class="floating-box" style="width: 34%; float: center;">
-		<body onload="buildImage();">
-		    <img class="contents" class="image-display" id="images"></img>
-		    <div id="names" style="text-transform: uppercase; margin: 15px;"></div>
-		</body>
+	    <div class="col span_1_of_5" style="width: 32.44%"><br></div>
+
+	    <div class="col span_1_of_5" style="width: 25.11%;">
+	    	<body onload="buildImage();">
+			    <img id="images" style="margin-left: 14%;"></img>
+			    <div id="names" style="text-transform: uppercase; margin: 12px; font-size: 18px; margin-left: 14%;"></div>
+			</body>
+	    </div>
+
+	    <div class="col span_1_of_5" style="width: 32.44%"><br></div>
+
+	    <div class="col span_1_of_5" style="width: 5%;"><br></div>
+	  </div>
+
+	  <!-- part 2 -->
+	  <div class="section group"style="margin-left: 0%;">
+	    <div class="col span_1_of_5" style="width: 5%;"><br></div>
+
+	    <div class="col span_1_of_5" style="width: 24.44%"><br></div>
+
+	    <div class="col span_1_of_5" style="width: 20%">
+	    	<input type="button" onclick="myFunctionLeft()" value="LEFT">
+	    </div>
+
+	    <!-- <div class="col span_1_of_5" style="width: 5%"><br></div> -->
+
+	    <div class="col span_1_of_5" style="width: 20%">
+			<input type="button" onclick="myFunctionRight()" value="RIGHT">
+	    </div>
+
+	    <div class="col span_1_of_5" style="width: 24.44%"><br></div>
+
+	    <div class="col span_1_of_5" style="width: 5%;"><br></div>
+	  </div>
+</div>
+
+<div id="header">
+	<div class="section group"style="margin-left: 0%;">
+	    <div class="col span_1_of_5" style="width: 5%;"><br></div>
+
+	    <div class="col span_1_of_5" style="width: 24.44%">
+	    	<p style="text-align: left;">
+				[<a href="free_beer.html">free beer</a>] 
+			</p>
+		</div>
+
+	    <div class="col span_1_of_5" style="width: 20%">
+	    	<br>
+	    </div>
+
+	    <!-- <div class="col span_1_of_5" style="width: 5%"><br></div> -->
+
+	    <div class="col span_1_of_5" style="width: 20%">
+			<br>
+	    </div>
+
+	    <div class="col span_1_of_5" style="width: 24.44%">
+	    	<p style="text-align: right;">
+				[<a href="about.html">about</a>]
+			</p>
+	    </div>
+
+	    <div class="col span_1_of_5" style="width: 5%;"><br></div>
 	</div>
-
-	<div class="floating-box" style="width: 33%; float: right;">
-		<br><br>
-		<input type="button" onclick="myFunctionRight()" value="RIGHT">
-	</div>
-	<br>
-<!-- </div> -->
-<br>
-</body>
-
-<footer class="container-bottom">
-	<!-- <p style="float: left;"><a href="index.html">restart</a>
-	<p style="float: center;"><a href="free_beer.html">free beer</a>
-	<p style="float: right;" id="aboutPop">about</p></p></p> -->
-	<p><a href="index.html" style="padding: 20px;">restart</a>
-	<a href="free_beer.html" style="padding: 20px;">free beer</a>
-	about</p>
-</footer>
-<!-- </fieldset> -->
+</div>
 
 <script src="main.js"></script>
 

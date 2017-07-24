@@ -11,64 +11,17 @@ html,body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    /*background-image: url("images/Background_image.jpg");*/
     font-family: 'Press Start 2P', cursive;
     padding: 115px, 115px, 115px, 115px;
     margin: auto;
     line-height: 12px;
-    /*max-width: 1280px;*/
-    /*max-height: 100px;*/
 }
-/*
-#holder{
-    min-height: 100%;
-    position:relative;
-}
-
-#body{
-    height of footer 
-    padding-bottom: 100px;
-}
-*/
-/*
-html { 
-  background: url("images/Background_image.jpg") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-body {
-    background-image: url("images/Background_image.jpg");
-    font-family: 'Press Start 2P', cursive;
-    padding: 115px, 115px, 115px, 115px;
-    margin: auto;
-    max-width: 1280px;
-    max-height: 100px;
-}
-
-
-footer {
-    /*float: center;
-    text-align: center;
-    font-size: 14px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    vertical-align: center;
-    padding-bottom: 1rem;
-    display: block;
-}
-*/
 
 #footer {
     position: fixed;
     bottom: 2%;
     left: 0;
     right: 0;
-    /*height: 50%;*/
-    /*background-color: #abcdef;*/
 }
 #header {
     position: fixed;
@@ -76,8 +29,6 @@ footer {
     left: 0;
     right: 0;
     height: 100px;
-    /*display: block;*/
-    /*background-color: #abcdef;*/
 }
 #content {
     position: fixed;
@@ -85,7 +36,6 @@ footer {
     bottom: 100px;
     left: 0;
     right: 0;
-    /*background-color: #F63;*/
     overflow: auto;
 }
 
@@ -99,13 +49,6 @@ a { color: black; }
 a:hover { background-color: #c3daf2;}
 
 div {
-    /*//background-color: #FFFFFF;*/
-    /*border: 1px solid #73AD21;*/
-    /*//width: 30px;*/
-    /*//border: 25px;*/
-    /*padding: 25px;*/
-    /*//margin: 25px;*/
-    /*text-transform: capitalize;*/
     text-align: center;
     font-family: 'Press Start 2P', cursive;
 }
@@ -127,20 +70,20 @@ input {
     font-size: 14px;
     text-align: center;
     vertical-align: center;
-    /*border*/: 4px solid #000000;
+    /*border: 4px solid #000000;*/
     background: transparent;
     height: 60px;
     width: 120px;
     margin-top: 12px;
 }
 
+input:hover {
+    background: black;
+    color: white;
+}
+
 img {
-    /*vertical-align: center;*/
     font-family: 'Press Start 2P', cursive;
-    /*display: block;*/
-    /*margin: auto;*/
-    /*padding: auto;*/
-    /*width: 100%;*/
     height: 44%;
     width: auto;
 }
@@ -159,7 +102,6 @@ img {
     padding: 0px;
     width: 100%;
     vertical-align: center;
-    /*float: center;*/
 }
 
 /*  GROUPING  ============================================================================= */

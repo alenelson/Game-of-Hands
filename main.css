@@ -77,10 +77,10 @@ input {
     margin-top: 12px;
 }
 
-input:hover {
+/*input:hover {
     background: black;
     color: white;
-}
+}*/
 
 img {
     font-family: 'Press Start 2P', cursive;

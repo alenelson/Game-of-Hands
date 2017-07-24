@@ -15,6 +15,7 @@ html,body{
     font-family: 'Press Start 2P', cursive;
     padding: 115px, 115px, 115px, 115px;
     margin: auto;
+    line-height: 12px;
     /*max-width: 1280px;*/
     /*max-height: 100px;*/
 }
@@ -93,6 +94,7 @@ head { font-family: 'Press Start 2P', cursive; }
 h1 { text-align: center; }
 
 a { color: black; }
+a:hover { background-color: #c3daf2;}
 
 div {
     /*//background-color: #FFFFFF;*/
@@ -186,9 +188,9 @@ img {
 .span_1_of_5 { width: 18.72%; }
 
 /*  GRID OF THREE   ============================================================================= */
-.span_3_of_3 { width: 27.44%; }
-.span_2_of_3 { width: 44.00%; }
-.span_1_of_3 { width: 27.44%; }
+.span_3_of_3 { width: 26.94%; }
+.span_2_of_3 { width: 46.00%; }
+.span_1_of_3 { width: 26.94%; }
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 @media only screen and (max-width: 480px) {

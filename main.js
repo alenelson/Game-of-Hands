@@ -28,7 +28,7 @@
 	'sidney-crosby-8471675', 'jake-guentzel-8477404', 'carl-hagelin-8474176', 'patric-hornqvist-8471887', 'phil-kessel-8473548',
 	'tom-kuhnhackl-8475832', 'evgeni-malkin-8471215', 'ryan-reaves-8471817', 'carter-rowney-8477240', 'bryan-rust-8475810',
 	'garrett-wilson-8475253', 'scott-wilson-8476293', 'ian-cole-8474013', 'brian-dumoulin-8475208', 'matt-hunwick-8471436',
-	'kris-letang-8471724', 'olli-maatta-8476874', 'errick-pouliot-8476884', 'chad-ruhwedel-8477244', 'justin-schultz-8474602',
+	'kris-letang-8471724', 'olli-maatta-8476874', 'derrick-pouliot-8476884', 'chad-ruhwedel-8477244', 'justin-schultz-8474602',
 	'nicklas-backstrom-8473563', 'jay-beagle-8474291', 'andre-burakovsky-8477444', 'brett-connolly-8475792', 'lars-eller-8474189',
 	'evgeny-kuznetsov-8475744',	't-j-oshie-8471698', 'alex-ovechkin-8471214', 'tom-wilson-8476880', 'john-carlson-8474590',
 	'matt-niskanen-8471702', 'dmitry-orlov-8475200', 'brooks-orpik-8468498', 'sebastian-aho-8478427', 'phillip-di-giuseppe-8476858',
@@ -139,10 +139,10 @@
 	'david-perron-8474102', 'teemu-pulkkinen-8475800', 'reilly-smith-8475191', 'alex-tuch-8477949',
 	'deryk-engelland-8468674', 'jason-garrison-8474520', 'brayden-mcnabb-8475188', 'jon-merrill-8475750',
 	'colin-miller-8476525', 'griffin-reinhart-8476852', 'luca-sbisa-8474579',  'nate-schmidt-8477220',
-	'clayton-stoner-8470886', 'shea-theodore-8477447', 'pavel-datsyuk-8467514', 'jaromir-jagr-8448208'
+	'clayton-stoner-8470886', 'shea-theodore-8477447', 'jaromir-jagr-8448208'
 ];
-//left handed = 0, right handed = 1
 
+//left handed = 0, right handed = 1
 var answerList = [
 	0,1,1,1,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,1,0,1,0,1,0,1,1,0,1,0,0,0,1,1,1,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,
 	1,0,0,0,0,1,0,0,0,1,0,1,0,1,1,0,1,0,0,0,0,0,1,1,0,1,0,1,1,0,1,1,0,1,0,0,0,1,0,0,0,1,1,0,0,1,1,1,0,0,0,0,0,1,0,0,1,1,0,1,0,1,
@@ -154,7 +154,7 @@ var answerList = [
 	0,0,1,0,1,1,0,0,1,1,0,1,1,0,0,1,1,1,0,1,0,0,0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,1,1,0,0,0,0,1,1,0,0,0,0,1,0,0,1,1,0,0,
 	0,0,1,1,1,0,1,1,0,1,0,1,1,1,0,1,1,0,1,1,0,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,1,0,0,0,1,1,0,0,0,1,0,0,0,1,
 	1,1,0,0,1,0,1,0,0,0,0,1,1,1,1,1,0,1,0,0,0,0,0,1,1,0,1,0,0,1,0,0,1,1,1,1,0,1,0,0,0,0,1,1,0,1,1,0,0,1,1,1,1,0,0,0,0,0,1,0,1,0,
-	0,0,0,1,0,0,0,1,1,0,0,1,0,1,1,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,1,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0
+	0,0,0,1,0,0,0,1,1,0,0,1,0,1,1,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,1,1,0,1,1,0,0,0,1,0,0,0,0,0,0
 ];
 
 var index = 0;

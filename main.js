@@ -180,6 +180,10 @@ function buildImage() {
 */
 }
 
+function showScore() {
+	document.getElementById("score").innerHTML = userScore;
+}
+
 function changeImage(){
 	getRandomIndex();
 	document.getElementById("images").src = getImage(index);
@@ -210,12 +214,13 @@ function getImage(number){
 }
 
 function youLost() {
-	localStorage.setItem("score", finalScore);
+	//finalScore = userScore;
+	localStorage.setItem("item", userScore);
 }
 
 function nextPage() {
-	userScore = localStorage.getItem("score");
-	document.getElementById("score").innerHTML = userScore;
+	userScore = localStorage.getItem("item");
+document.getElementById("score").innerHTML = localStorage.getItem("item");
 }
 
 function addScore(){
@@ -232,8 +237,10 @@ function myFunctionLeft(){
 	else{
 		finalScore = userScore;
 		youLost();
+			localStorage.setItem("item", userScore);
+
 		location.assign("game_over.html");
-		document.getElementById("score").innerHTML = userScore;
+		//document.getElementById("score").innerHTML = userScore;
 		// userScore = 0;
 	}
 }
@@ -247,8 +254,10 @@ function myFunctionRight(){
 	else{
 		finalScore = userScore;
 		youLost();
+			localStorage.setItem("item", userScore);
+
 		location.assign("game_over.html");
-		document.getElementById("score").innerHTML = userScore;
+		//document.getElementById("score").innerHTML = userScore;
 		// userScore = 0;
 	}
 }

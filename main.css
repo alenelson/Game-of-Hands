@@ -93,6 +93,8 @@ head { font-family: 'Press Start 2P', cursive; }
 
 h1 { text-align: center; }
 
+p { line-height: 12px; }
+
 a { color: black; }
 a:hover { background-color: #c3daf2;}
 

@@ -223,7 +223,7 @@ function myFunctionLeft(){
 		finalScore = userScore;
 		youLost();
 		localStorage.setItem("item", userScore);
-		location.assign("/Game-of-Hands/game_over.html");
+		location.assign("game_over.html");
 	}
 }
 
@@ -237,7 +237,7 @@ function myFunctionRight(){
 		finalScore = userScore;
 		youLost();
 		localStorage.setItem("item", userScore);
-		location.assign("/Game-of-Hands/game_over.html");
+		location.assign("game_over.html");
 	}
 }
 

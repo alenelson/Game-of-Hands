@@ -11,7 +11,7 @@ html,body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P';
     padding: 115px, 115px, 115px, 115px;
     margin: auto;
     line-height: 12px;

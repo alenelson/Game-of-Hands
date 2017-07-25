@@ -239,7 +239,7 @@ function myFunctionLeft(){
 		youLost();
 			localStorage.setItem("item", userScore);
 
-		location.assign("game_over.html");
+		location.assign("../game_over.html");
 		//document.getElementById("score").innerHTML = userScore;
 		// userScore = 0;
 	}
@@ -256,7 +256,7 @@ function myFunctionRight(){
 		youLost();
 			localStorage.setItem("item", userScore);
 
-		location.assign("game_over.html");
+		location.assign("../game_over.html");
 		//document.getElementById("score").innerHTML = userScore;
 		// userScore = 0;
 	}

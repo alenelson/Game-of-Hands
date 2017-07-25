@@ -39,7 +39,7 @@ html,body{
     overflow: auto;
 }
 
-head { font-family: 'Press Start 2P'; }
+head { font-family: 'Press Start 2P', 'monospace'; }
 
 h1 { text-align: center; }
 

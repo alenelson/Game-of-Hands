@@ -163,7 +163,6 @@ var displayName = document.getElementById('names');
 var userScore = 0;
 var finalScore = 0;
 var guess = -1;
-var isMobile = false;
 
 function buildImage() {
 	//alert("players "+ playerList.length+ " answers "+ answerList.length);

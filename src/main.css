@@ -90,7 +90,7 @@ img {
 
 .link span{ color:black; font-size:15px; }
 .link:hover span{ color:red; }
-.blink span{ color:black; /*font-size:15px;*/ }
+.blink span{ color:black; font-size:15px; }
 .blink:hover span{ color:red; }
 
 

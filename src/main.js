@@ -163,6 +163,7 @@ var displayName = document.getElementById('names');
 var userScore = 0;
 var finalScore = 0;
 var guess = -1;
+var isMobile = false;
 
 function buildImage() {
 	//alert("players "+ playerList.length+ " answers "+ answerList.length);
@@ -172,30 +173,18 @@ function buildImage() {
 	document.getElementById("score").innerHTML = userScore;
 	document.getElementById("images").src = getImage(index);
 	document.getElementById("names").innerHTML = getName(index);
-/*
-	var img = document.createElement('img');
-	img.src = playerImg[index];
-	var name = document.createTextNode(playerName[index]);
-	document.getElementById('content').appendChild(img);
-*/
 }
 
-function showScore() {
-	document.getElementById("score").innerHTML = userScore;
-}
+function showScore() { document.getElementById("score").innerHTML = userScore; }
 
 function changeImage(){
 	getRandomIndex();
 	document.getElementById("images").src = getImage(index);
 	document.getElementById("names").innerHTML = getName(index);
-	// document.getElementById("score").innerHTML = userScore;
 }
 
-// stuff = 'alec-martinez-8474166'
 function textEdit(stuff){
 	var output = stuff.replace(/-/g, " ");
-	//output = output.replace(/[^0-9]/g, '');
-	//output = output.slice(null, -7);
 	return output;
 }
 
@@ -205,7 +194,6 @@ function getName(number){
 	return output;
 }
 
-// link = 'alec-martinez-8474166'
 function getImage(number){
 	var input = playerList[number];
 	var output = input.replace(/[^0-9]/g, '');
@@ -213,14 +201,11 @@ function getImage(number){
 	return link;
 }
 
-function youLost() {
-	//finalScore = userScore;
-	localStorage.setItem("item", userScore);
-}
+function youLost() { localStorage.setItem("item", userScore); }
 
 function nextPage() {
 	userScore = localStorage.getItem("item");
-document.getElementById("score").innerHTML = localStorage.getItem("item");
+	document.getElementById("score").innerHTML = localStorage.getItem("item");
 }
 
 function addScore(){
@@ -237,11 +222,8 @@ function myFunctionLeft(){
 	else{
 		finalScore = userScore;
 		youLost();
-			localStorage.setItem("item", userScore);
-
-		location.assign("../game_over.html");
-		//document.getElementById("score").innerHTML = userScore;
-		// userScore = 0;
+		localStorage.setItem("item", userScore);
+		location.assign("game_over.html");
 	}
 }
 
@@ -254,14 +236,9 @@ function myFunctionRight(){
 	else{
 		finalScore = userScore;
 		youLost();
-			localStorage.setItem("item", userScore);
-
-		location.assign("../game_over.html");
-		//document.getElementById("score").innerHTML = userScore;
-		// userScore = 0;
+		localStorage.setItem("item", userScore);
+		location.assign("game_over.html");
 	}
 }
 
-function getRandomIndex(){
-	index = Math.floor(Math.random() * playerList.length);
-}
+function getRandomIndex(){ index = Math.floor(Math.random() * playerList.length); }

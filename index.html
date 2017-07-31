@@ -1,9 +1,9 @@
-<!-- Game of Hands
+ <!-- Game of Hands
 	by Russ Rizzo
 	coded by Alex Nelson -->
 
 <script type="text/javascript">
-  if (screen.width <= 699) {
+  if (screen.width <= 699) { 
     document.location = "mobile.html";
   }
 </script>
@@ -29,49 +29,29 @@
 
 <body>
 	<div class="section group">
-		<br>
-		<p style="margin: 15px; font-size: 22px;">SCORE</p>
-		<br>
-		<p style="margin: 15px; font-size: 58px;" id="score"></p>
+		<p style="margin: 45px; font-size: 32px;">
+			GAME OF HANDS
+		</p>
+		<p style="font-size: 24px;">&gt;How to Play&lt;</p><br>
+		<p>
+			Please select the handedness<br><br>
+			of the NHL player who appears<br><br>
+			on screen.
+		</p><br>
+		<p>
+			Use the &lt; and &gt; arrows<br><br>
+			on your keyboard or your cursor.
+		</p><br>
+		<p>
+			<a href="http://sideprojectgenerator.com" style="text-decoration: none" target="_blank">Good luck</a>.
+		</p>
 	</div>
-	<div class="section group">
-	    <div class="col span_1_of_3"><br></div>
-
-	    <div class="col span_2_of_3" style="margin-top:25px;">
-	    	<body onload="buildImage();">
-			    <img id="images"></img>
-			    <div id="names" style="text-transform: uppercase; margin: 12px; font-size: 18px;"></div>
-			</body>
-	    </div>
-
-	    <div class="col span_3_of_3"><br></div>
-	</div>
-	<div class="section group">
-	    <div class="col span_1_of_5" style="width: 26.44%;"><br></div>
-
-	    <div class="col span_1_of_5" style="width: 21%;">
-	    	<input type="button" onclick="myFunctionLeft()" value="LEFT">
-	    </div>
-
-	    <div class="col span_1_of_5" style="width: 4%"><br></div>
-
-	    <div class="col span_1_of_5" style="width: 21%;">
-			<input type="button" onclick="myFunctionRight()" value="RIGHT">
-	    </div>
-
-	    <div class="col span_1_of_5" style="width: 26.44%;"><br></div>
-	</div>
-	<br>
-	<div class="section group">
-	    <div class="col span_1_of_3"><br></div>
-
-	    <div class="col span_2_of_3">
-	    	<p>[<a href="menu.html">MAIN MENU</a>]</p>
-	    </div>
-
-	    <div class="col span_3_of_3"><br></div>
+	<br><br><br><br><br><br>
+	<div class="section-group">
+		<p>[<a href="play.html">PLAY</a>]</p>
+		<p>[<a href="about.html">ABOUT</a>]</p>
+		<p>[<a href="https://www.twitter.com/gameofhands" target="_blank">@GameOfHands</a>]</p>
 	</div>
 </body>
 
 <script src="src/main.js"></script>
-<script src="src/eventListener.js"></script>

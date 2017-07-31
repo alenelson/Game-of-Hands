@@ -44,8 +44,10 @@ head { font-family: 'Press Start 2P', 'monospace'; }
 h1 { text-align: center; }
 
 p {
-    line-height: 12px;
+    /*line-height: 12px;*/
+    line-height: 1.1;
     font-size: 14px;
+    /*word-wrap: normal;*/
 }
 
 a { color: black; }

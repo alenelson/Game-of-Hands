@@ -1,0 +1,77 @@
+<!-- Game of Hands
+	by Russ Rizzo
+	coded by Alex Nelson -->
+
+<script type="text/javascript">
+  if (screen.width <= 699) {
+    document.location = "mplay.html";
+  }
+</script>
+<script language=javascript>
+  if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+     location.replace("mplay.html");
+  }
+</script>
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Game of Hands</title>
+  <link href="src/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+</head>
+
+<body>
+	<div class="section group">
+		<br>
+		<p style="margin: 15px; font-size: 22px;">SCORE</p>
+		<br>
+		<p style="margin: 1px; font-size: 58px;" id="score"></p>
+	</div>
+	<div class="section group">
+	    <div class="col span_1_of_3"><br></div>
+
+	    <div class="col span_2_of_3" style="margin-top:2px;">
+	    	<body onload="buildImage();">
+			    <img id="images"></img>
+			    <div id="names" style="text-transform: uppercase; margin: 12px; font-size: 18px;"></div>
+			</body>
+	    </div>
+
+	    <div class="col span_3_of_3"><br></div>
+	</div>
+	<div class="section group">
+	    <div class="col span_1_of_5" style="width: 26.44%;"><br></div>
+
+	    <div class="col span_1_of_5" style="width: 21%;">
+	    	<input type="button" onclick="myFunctionLeft()" value="LEFT">
+	    </div>
+
+	    <div class="col span_1_of_5" style="width: 4%"><br></div>
+
+	    <div class="col span_1_of_5" style="width: 21%;">
+			<input type="button" onclick="myFunctionRight()" value="RIGHT">
+	    </div>
+
+	    <div class="col span_1_of_5" style="width: 26.44%;"><br></div>
+	</div>
+	<br>
+	<div class="section group">
+	    <div class="col span_1_of_3"><br></div>
+
+	    <div class="col span_2_of_3">
+	    	<p>[<a href="index.html">MAIN MENU</a>]</p>
+	    </div>
+
+	    <div class="col span_3_of_3"><br></div>
+	</div>
+</body>
+
+<script src="src/main.js"></script>
+<script src="src/eventListener.js"></script>
